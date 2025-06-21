@@ -9,6 +9,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        psd: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(E) &kp C &kp N &kp F &kp N &kp Y &kp T &kp R &kp T &kp N5 &kp LS(A) &kp B &kp D &kp F &kp N5 &kp D &kp B &kp C &kp N1 &kp EXCL &kp EXCL &kp EXCL>;
+            label = "NEW_MACRO";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -20,10 +29,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp Q           &kp W           &kp E        &kp R             &kp T        &kp Y    &kp U             &kp I      &kp O    &kp P     &kp BSPC
-&trans  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G        &kp H    &mt LEFT_SHIFT J  &kp K      &kp L    &kp SEMI  &kp SQT
-&trans  &kp Z           &kp X           &kp C        &kp V             &kp B        &kp N    &kp M             &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                                        &kp LGUI     &mo 1             &kp SPACE    &kp RET  &mo 2             &kp RALT
+&none  &kp Q           &kp W           &kp E        &kp R             &kp T        &kp Y    &kp U             &kp I           &kp O           &kp P              &none
+&none  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G        &kp H    &mt LEFT_SHIFT J  &mt LCTRL K     &mt LEFT_ALT L  &mt LEFT_GUI SEMI  &none
+&none  &kp Z           &kp X           &kp C        &kp V             &kp B        &kp N    &kp M             &kp COMMA       &kp DOT         &kp FSLH           &none
+                                       &kp LGUI     &mo 1             &kp SPACE    &kp RET  &mo 2             &kp LEFT_SHIFT
             >;
         };
 
@@ -35,10 +44,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6         &kp N7    &kp N8    &kp N9     &kp N0        &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT       &kp DOWN  &kp UP    &kp RIGHT  &trans        &trans
-&kp LSHFT   &bt BT_CLR    &sys_reset    &trans        &trans        &bootloader     &trans         &trans    &trans    &trans     &kp QUESTION  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp BACKSPACE  &mo 3     &kp RALT
+&none  &kp N1      &kp N2        &kp N3        &kp N4        &kp N5          &kp N6         &kp N7    &kp N8    &kp N9     &kp N0        &none
+&none  &kp ESC     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT       &kp DOWN  &kp UP    &kp RIGHT  &trans        &none
+&none  &bt BT_CLR  &sys_reset    &trans        &trans        &kp DEL         &trans         &trans    &trans    &trans     &kp QUESTION  &none
+                                 &kp LGUI      &trans        &kp SPACE       &kp BACKSPACE  &mo 3     &kp RALT
             >;
         };
 
@@ -50,10 +59,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR     &kp BSPC
-&kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH     &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &bootloader  &kp TILDE
-                             &kp LGUI  &mo 3     &kp SPACE    &kp RET    &trans     &kp RALT
+&none  &kp EXCL  &kp AT                &kp HASH        &kp DLLR               &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR     &none
+&none  &trans    &kp LEFT_PARENTHESIS  &kp UNDERSCORE  &kp RIGHT_PARENTHESIS  &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH     &none
+&none  &trans    &trans                &trans          &trans                 &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &bootloader  &none
+                                       &kp LGUI        &mo 3                  &kp SPACE    &kp RET    &trans     &kp RALT
             >;
         };
 
@@ -61,7 +70,7 @@
             bindings = <
 &trans  &bt BT_SEL 0    &bt BT_SEL 1  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans       &trans
 &trans  &bt BT_CLR_ALL  &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans       &trans
-&trans  &bootloader     &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &bootloader  &trans
+&trans  &bootloader     &trans        &trans  &trans  &trans    &psd    &trans  &trans  &trans  &bootloader  &trans
                                       &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
