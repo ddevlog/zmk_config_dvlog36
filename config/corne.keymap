@@ -16,8 +16,24 @@
         psd: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(E) &kp C &kp N &kp F &kp N &kp Y &kp T &kp R &kp T &kp N5 &kp LS(A) &kp B &kp D &kp F &kp N5 &kp D &kp B &kp C &kp N1 &kp EXCL &kp EXCL &kp EXCL>;
+            bindings = <&kp LS(E) &kp C &kp N &kp F &kp N &kp Y &kp T &kp R &kp N5 &kp LS(A) &kp B &kp D &kp F &kp N5 &kp D &kp B &kp C &kp N1 &kp EXCL &kp EXCL &kp EXCL>;
             label = "NEW_MACRO";
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        cm1 {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <30 31>;
+            timeout-ms = <200>;
+        };
+
+        cm_qw {
+            bindings = <&kp QUESTION>;
+            key-positions = <34 35>;
+            timeout-ms = <300>;
         };
     };
 
