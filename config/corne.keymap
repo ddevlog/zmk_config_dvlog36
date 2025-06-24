@@ -49,10 +49,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp N1              &kp N2        &kp N3     &kp N4          &kp N5       &kp N6                &kp N7    &kp N8          &kp N9         &kp N0           &none
-&none  &mt LEFT_GUI ENTER  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &kp ENTER    &none                 &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &none
-&none  &kp AT_SIGN         &kp HOME      &none      &kp END         &kp DEL      &kp LG(LS(NUMBER_4))  &trans    &trans          &kp PAGE_DOWN  &kp QUESTION     &none
-                                         &kp LGUI   &trans          &kp SPACE    &kp BACKSPACE         &mo 3     &kp RALT
+&none  &kp N1              &kp N2        &kp N3     &kp N4          &kp N5       &kp N6                &kp N7     &kp N8          &kp N9         &kp N0           &none
+&none  &mt LEFT_GUI ENTER  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &kp ENTER    &none                 &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &none
+&none  &kp AT_SIGN         &kp HOME      &none      &kp END         &kp DEL      &kp LG(LS(NUMBER_4))  &kp COMMA  &kp LC(KP_DOT)  &kp PAGE_DOWN  &kp QUESTION     &none
+                                         &kp LGUI   &trans          &kp SPACE    &kp BACKSPACE         &mo 3      &kp RALT
             >;
         };
 
@@ -66,7 +66,7 @@
             bindings = <
 &none  &kp EXCL  &kp AT                &kp HASH        &kp DLLR               &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR      &none
 &none  &trans    &kp LEFT_PARENTHESIS  &kp UNDERSCORE  &kp RIGHT_PARENTHESIS  &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH      &none
-&none  &trans    &trans                &trans          &trans                 &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp QUESTION  &none
+&none  &trans    &trans                &trans          &trans                 &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp KP_SLASH  &none
                                        &kp LGUI        &mo 3                  &kp SPACE    &kp RET    &trans     &kp RALT
             >;
         };
