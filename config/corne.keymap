@@ -32,11 +32,13 @@
         esc {
             bindings = <&kp ESC>;
             key-positions = <0 1>;
+            layers = <0>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <12 13>;
+            layers = <0>;
         };
     };
 
@@ -81,10 +83,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp EXCL  &kp AT                &kp HASH        &kp DLLR               &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR      &none
-&none  &trans    &kp LEFT_PARENTHESIS  &kp UNDERSCORE  &kp RIGHT_PARENTHESIS  &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH      &none
-&none  &trans    &trans                &trans          &trans                 &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp KP_SLASH  &none
-                                       &kp LGUI        &mo 3                  &kp SPACE    &kp RET    &trans     &kp RALT
+&none  &kp EXCL  &kp AT                &kp HASH        &kp DLLR                &kp PRCNT                  &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR      &none
+&none  &trans    &kp LEFT_PARENTHESIS  &kp UNDERSCORE  &kp RIGHT_PARENTHESIS   &trans                     &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH      &none
+&none  &trans    &trans                &trans          &kp LA(LC(LEFT_ARROW))  &kp LA(LC(RIGHT_ARROW))    &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp KP_SLASH  &none
+                                       &kp LGUI        &mo 3                   &kp SPACE                  &kp RET    &trans     &kp RALT
             >;
         };
 
