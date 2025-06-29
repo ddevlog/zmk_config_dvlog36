@@ -33,14 +33,14 @@
             bindings = <&kp ESC>;
             key-positions = <0 1>;
             layers = <0>;
-            timeout-ms = <150>;
+            timeout-ms = <40>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <12 13>;
             layers = <0>;
-            timeout-ms = <150>;
+            timeout-ms = <40>;
         };
     };
 
