@@ -70,10 +70,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp N1            &kp N2        &kp N3     &kp N4          &kp N5       &kp N6                &kp N7     &kp N8          &kp N9         &kp N0           &none
-&none  &mt LEFT_GUI ESC  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &kp ENTER    &none                 &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &none
-&none  &kp AT_SIGN       &kp HOME      &none      &kp END         &kp DEL      &kp LG(LS(NUMBER_4))  &kp COMMA  &kp LC(DOT)     &kp PAGE_DOWN  &kp QUESTION     &none
-                                       &kp LGUI   &trans          &kp SPACE    &kp BACKSPACE         &mo 3      &kp RALT
+&none  &kp N1            &kp N2        &kp N3      &kp N4         &kp N5       &kp N6                &kp N7     &kp N8          &kp N9         &kp N0           &none
+&none  &mt LEFT_GUI ESC  &kp LA(LEFT)  &kp LA(UP)  &kp LA(RIGHT)  &kp ENTER    &none                 &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &none
+&none  &kp AT_SIGN       &kp HOME      &none       &kp END        &kp DEL      &kp LG(LS(NUMBER_4))  &kp COMMA  &kp LC(DOT)     &kp PAGE_DOWN  &kp QUESTION     &none
+                                       &kp LGUI    &trans         &kp SPACE    &kp BACKSPACE         &mo 3      &kp RALT
             >;
         };
 
