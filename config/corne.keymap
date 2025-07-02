@@ -106,7 +106,7 @@
 &trans  &kp Q           &kp W           &kp F        &kp P             &kp B        &kp J      &kp L             &kp U        &kp Y           &kp SEMI        &trans
 &trans  &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G        &kp M      &mt LEFT_SHIFT N  &mt LCTRL E  &mt LEFT_ALT I  &mt LEFT_GUI O  &trans
 &trans  &kp Z           &kp X           &kp C        &kp D             &kp V        &kp K      &kp H             &kp COMMA    &kp DOT         &kp FSLH        &trans
-                                        &tog 0       &trans            &kp SPACE    &kp ENTER  &trans            &trans
+                                        &tog 4       &mo 1             &kp SPACE    &kp ENTER  &mo 2             &trans
             >;
         };
     };
