@@ -45,6 +45,26 @@
         };
     };
 
+    behaviors {
+        td_copy: td_copy {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_COPY";
+            #binding-cells = <0>;
+            bindings = <&kp C>, <&kp LG(C)>;
+
+            tapping-term-ms = <200>;
+        };
+
+        td_paste: td_paste {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_PASTE";
+            #binding-cells = <0>;
+            bindings = <&kp V>, <&kp LG(V)>;
+
+            tapping-term-ms = <200>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
