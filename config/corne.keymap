@@ -144,10 +144,10 @@
 
         system {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &rgb_ug RGB_OFF  &ext_power EP_OFF  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans           &ext_power EP_ON   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans           &trans             &trans
-                        &tog 5  &trans  &trans    &trans  &trans  &trans
+&kp ESCAPE  &kp NUMBER_4  &kp W   &kp N5  &kp NUMBER_6  &kp N7    &trans  &trans  &trans  &rgb_ug RGB_OFF  &ext_power EP_OFF  &trans
+&kp TAB     &kp A         &kp S   &kp D   &kp F         &none     &trans  &trans  &trans  &trans           &ext_power EP_ON   &trans
+&trans      &trans        &trans  &trans  &trans        &trans    &trans  &trans  &trans  &trans           &trans             &trans
+                                  &tog 5  &trans        &trans    &trans  &trans  &trans
             >;
         };
     };
