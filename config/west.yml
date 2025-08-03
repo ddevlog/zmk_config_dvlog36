@@ -1,7 +1,5 @@
 manifest:
-  defaults:
-    revision: v0.2
-remotes:
+  remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     # support nice_oled and nice_epaper
