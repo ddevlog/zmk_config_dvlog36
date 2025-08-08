@@ -1,14 +1,32 @@
 manifest:
   remotes:
-    - name: zmkfirmware
+     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    # support nice_oled and nice_epaper
+    - name: ergohaven
+      url-base: https://github.com/ergohaven
+    - name: badjeff
+      url-base: https://github.com/badjeff
+    - name: carrefinho
+      url-base: https://github.com/carrefinho
+    - name: janpfischer
+      url-base: https://github.com/janpfischer
   
   projects:
-    - name: zmk
+   - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-  
+    - name: ergohaven-zmk
+      remote: ergohaven
+      revision: main
+    - name: zmk-pmw3610-driver
+      remote: badjeff
+      revision: main
+    - name: prospector-zmk-module
+      remote: carrefinho
+      revision: main
+    - name: zmk-dongle-screen
+      remote: janpfischer
+      revision: main
   self:
     path: config
