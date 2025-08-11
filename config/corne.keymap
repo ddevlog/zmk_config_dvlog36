@@ -87,8 +87,13 @@
         };
 
         RU_ENG {
-            bindings = <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+            bindings = <&to_ru>;
             key-positions = <4 3>;
+        };
+
+        TO_EN {
+            bindings = <&to_en>;
+            key-positions = <3 4>;
         };
     };
 
