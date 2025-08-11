@@ -26,8 +26,9 @@
             #binding-cells = <0>;
             bindings = <&kp LS(E) &kp C &kp N &kp F &kp N &kp Y &kp T &kp R &kp N5 &kp LS(A) &kp B &kp D &kp F &kp N5 &kp D &kp B &kp C &kp N1 &kp EXCL &kp EXCL &kp EXCL>;
             label = "NEW_MACRO";
-        }; 
- to_ru: to_ru {
+        };
+
+        to_ru: to_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LC(N2))>;
@@ -124,7 +125,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        EN {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -132,10 +133,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp LEFT_BRACKET  &kp Q  &kp W  &kp E         &kp R      &kp T        &kp Y    &kp U  &kp I           &kp O    &kp P          &kp RIGHT_BRACKET
-&kp TAB           &kp A  &kp S  &kp D         &kp F      &kp G        &kp H    &kp J  &kp K           &kp L    &kp SEMICOLON  &kp SINGLE_QUOTE
-&kp LCMD          &kp Z  &kp X  &td_copy      &td_paste  &kp B        &kp N    &kp M  &kp COMMA       &kp DOT  &kp QUESTION   &kp RIGHT_BRACE
-                                &kp LEFT_GUI  &mo 1      &kp SPACE    &kp RET  &mo 2  &kp LEFT_SHIFT
+&kp LEFT_BRACKET  &kp Q  &kp W  &kp E      &kp R      &kp T        &kp Y    &kp U  &kp I           &kp O    &kp P          &kp RIGHT_BRACKET
+&kp TAB           &kp A  &kp S  &kp D      &kp F      &kp G        &kp H    &kp J  &kp K           &kp L    &kp SEMICOLON  &kp SINGLE_QUOTE
+&kp LCMD          &kp Z  &kp X  &td_copy   &td_paste  &kp B        &kp N    &kp M  &kp COMMA       &kp DOT  &kp QUESTION   &kp RIGHT_BRACE
+                                &kp LCTRL  &mo 1      &kp SPACE    &kp RET  &mo 2  &kp LEFT_SHIFT
             >;
         };
 
