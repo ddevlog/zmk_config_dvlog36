@@ -217,7 +217,7 @@
             bindings = <
 &kp ESC  &kp N1       &kp N2        &kp N3      &kp N4         &kp N5       &kp N6                &kp N7        &kp N8          &kp N9         &kp N0           &trans
 &trans   &kp ESC      &kp LA(LEFT)  &kp LA(UP)  &kp LA(RIGHT)  &kp ENTER    &none                 &kp LEFT      &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &kp PIPE
-&kp AT   &kp AT_SIGN  &kp HOME      &none       &kp END        &kp DEL      &kp LG(LS(NUMBER_4))  &kp RU_COMMA  &kp LS(RU_DOT)  &kp PAGE_DOWN  &kp QUESTION     &kp COLON
+&kp AT   &kp AT_SIGN  &kp HOME      &none       &kp END        &kp DEL      &kp LG(LS(NUMBER_4))  &kp RU_COMMA  &kp RU_DOT      &kp PAGE_DOWN  &kp QUESTION     &kp COLON
                                     &kp LGUI    &trans         &kp SPACE    &kp BACKSPACE         &mo 3         &kp RALT
             >;
         };
