@@ -2,15 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: mctechnology17  # Добавлен новый remote
+    - name: mctechnology17
       url-base: https://github.com/mctechnology17
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: v3.7.0 # ← заменили main на тег релиза
       import: app/west.yml
-    - name: zmk-oled-adapter  # Добавлен новый проект для экранов
+    - name: zmk-oled-adapter # если используете
       remote: mctechnology17
-      revision: main
+      revision: main # или тоже зафиксируйте, если есть теги
   self:
     path: config
