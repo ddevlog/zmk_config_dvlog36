@@ -7,7 +7,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v3.7.0 # ← заменили main на тег релиза
+      revision: v0.3.0 # ← заменили main на тег релиза
       import: app/west.yml
     - name: zmk-oled-adapter # если используете
       remote: mctechnology17
