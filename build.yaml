@@ -1,7 +1,7 @@
 include:
   - name: corne_left_display # Левая половина с экраном
     board: nice_nano@2/nrf52840/zmk
-    shield: corne_left nice_view_adapter nice_view
+    shield: corne_left
   - name: corne_right_display # Правая половина с экраном
     board: nice_nano@2/nrf52840/zmk
-    shield: corne_right nice_view_adapter nice_view
+    shield: corne_right
