@@ -1,6 +1,3 @@
-/*
- * Enable I2C0 for OLED, disable SPI0 to avoid hardware conflict.
- */
 &i2c0 {
     status = "okay";
     clock-frequency = <I2C_BITRATE_FAST>;
@@ -18,4 +15,8 @@
         com-invdir;
         prechargep = <0x22>;
     };
+};
+
+&spi0 {
+    status = "disabled";
 };
