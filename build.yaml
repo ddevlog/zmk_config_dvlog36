@@ -18,7 +18,7 @@
 #     artifact-name: corne_left_with_studio
 #
 include:
-  - board: nice_nano
+  - board: nice_nano@2/nrf52840/zmk # или полный вариант nice_nano@2.0.0/nrf52840/zmk
     shield: corne_left
-  - board: nice_nano
+  - board: nice_nano@2/nrf52840/zmk
     shield: corne_right
