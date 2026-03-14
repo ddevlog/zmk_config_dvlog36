@@ -19,7 +19,3 @@
         prechargep = <0x22>;
     };
 };
-
-&spi0 {
-    status = "disabled";
-};
