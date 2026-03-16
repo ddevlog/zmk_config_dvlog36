@@ -7,16 +7,6 @@
     };
 };
 
-/ {
-    chosen {
-        zmk,battery = &vbatt;
-    };
-
-    vbatt: vbatt {
-        compatible = "zmk,battery-nrf-vddh";
-    };
-};
-
 &i2c0 {
     status = "okay";
     clock-frequency = <I2C_BITRATE_FAST>;
