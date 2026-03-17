@@ -2,15 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: mctechnology17
-      url-base: https://github.com/mctechnology17
+    - name: haerttrich
+      url-base: https://github.com/haerttrich
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main # или конкретный тег, например v3.5.0
       import: app/west.yml
-    - name: zmk-nice-oled
-      remote: mctechnology17
+    - name: zmk-nice-custom
+      remote: haerttrich
       revision: main
   self:
     path: config
