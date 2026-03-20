@@ -5,5 +5,5 @@
     };
 };
 &oled {
-    widgets = <&battery &bt &output &layer>;
+    widgets = <&battery &output &layer>;
 };
