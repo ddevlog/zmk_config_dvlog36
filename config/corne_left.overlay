@@ -1,6 +1,3 @@
-/ {
-    battery: battery {
-        compatible = "zmk,battery-nrf-vddh";
-        label = "BATTERY";
-    };
+&battery {
+    status = "okay";
 };
