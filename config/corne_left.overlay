@@ -1,0 +1,9 @@
+/ {
+    battery: battery {
+        compatible = "zmk,battery-nrf-vddh";
+        label = "BATTERY";
+    };
+};
+&oled {
+    widgets = <&battery &ble_status &output_status &layer_status>;
+};
