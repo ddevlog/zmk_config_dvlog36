@@ -4,6 +4,3 @@
         label = "BATTERY";
     };
 };
-&oled {
-    widgets = <&battery &output &layer>;
-};
