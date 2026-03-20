@@ -1,3 +1,13 @@
 / &battery {
     status = "okay";
 };
+/ {
+    battery: battery {
+        compatible = "zmk,battery-nrf-vddh";
+        label = "BATTERY";
+    };
+};
+
+chosen {
+    zmk,battery = &battery;
+};
