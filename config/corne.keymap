@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 #include "keys_ru.h"
-&battery_status {
+&battery {
     status = "okay";
 };
 &mt {
