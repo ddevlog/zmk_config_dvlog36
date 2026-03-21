@@ -1,36 +1,3 @@
-#include <dt-bindings/zmk/keys.h>
-#include <behaviors.dtsi>
-
-/ {
-    chosen {
-        zmk,battery = &vbatt;
-        zephyr,display = &ssd1306;   // замените на &nice_view, если используете nice!view
-    };
-};
-
 &vbatt {
     status = "okay";
-};
-
-&pmic {
-    status = "okay";
-};
-
-// Если у вас OLED на I2C (стандартный 0.91" или 0.96")
-&i2c0 {
-    status = "okay";
-    ssd1306: ssd1306@3c {
-        compatible = "solomon,ssd1306fb";
-        reg = <0x3c>;
-        width = <128>;
-        height = <32>;
-        segment-offset = <0>;
-        page-offset = <0>;
-        display-offset = <0>;
-        multiplex-ram = <0>;
-        segment-remap;
-        com-invdir;
-        com-sequential;
-        prechargep = <0x22>;
-    };
 };
