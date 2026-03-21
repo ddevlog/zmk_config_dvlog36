@@ -1,3 +1,0 @@
-&vbatt {
-    status = "okay";
-};
