@@ -145,6 +145,8 @@
 &kp LCMD          &kp Z  &kp X  &td_copy   &td_paste  &kp B        &kp N    &kp M  &kp COMMA       &kp DOT  &kp QUESTION   &kp RIGHT_BRACE
                                 &kp LCTRL  &mo 1      &kp SPACE    &kp RET  &mo 2  &kp LEFT_SHIFT
             >;
+
+            label = "EN";
         };
 
         lower_layer_en {
@@ -160,6 +162,8 @@
 &kp AT   &kp AT_SIGN  &kp HOME      &kp LEFT_SHIFT  &kp END        &kp DEL      &kp LG(LS(NUMBER_4))  &kp COMMA  &kp LC(DOT)     &kp PAGE_DOWN  &kp QUESTION     &kp COLON
                                     &kp LGUI        &trans         &kp SPACE    &kp BACKSPACE         &mo 3      &kp RALT
             >;
+
+            label = "EN_LOWER";
         };
 
         raise_layer_en {
@@ -175,6 +179,8 @@
 &none  &trans    &trans                &trans          &kp LA(LG(LEFT_ARROW))  &kp LA(LG(RIGHT_ARROW))    &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp KP_SLASH  &none
                                        &kp LGUI        &mo 3                   &kp SPACE                  &kp RET    &trans     &kp RALT
             >;
+
+            label = "EN_RAISE";
         };
 
         conf {
@@ -184,6 +190,8 @@
 &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp F9  &kp F10  &kp F11  &kp F11    &psd          &trans        &tog 4             &sys_reset  &bootloader     &none
                                              &trans   &trans   &trans     &trans        &trans        &tog 5
             >;
+
+            label = "CONF";
         };
 
         colemark {
@@ -193,6 +201,8 @@
 &trans  &kp Z           &kp X           &kp C        &kp D             &kp V        &kp K      &kp H             &kp COMMA    &kp DOT         &kp FSLH        &trans
                                         &tog 4       &mo 1             &kp SPACE    &kp ENTER  &mo 2             &trans
             >;
+
+            label = "COLEMARK";
         };
 
         system {
@@ -202,6 +212,8 @@
 &trans      &trans        &trans  &trans  &trans        &trans    &trans  &trans  &trans  &trans           &trans             &trans
                                   &tog 5  &trans        &trans    &trans  &trans  &trans
             >;
+
+            label = "GAME";
         };
 
         RU {
@@ -211,6 +223,8 @@
 &kp LGUI  &kp Z  &kp X  &kp C      &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &trans
                         &kp LCTRL  &mo 7  &kp SPACE    &kp ENTER  &mo 8  &kp LSHFT
             >;
+
+            label = "RU";
         };
 
         lower_layer_ru {
@@ -218,8 +232,10 @@
 &kp ESC  &kp N1       &kp N2        &kp N3          &kp N4         &kp N5       &kp N6                &kp N7        &kp N8          &kp N9         &kp N0           &trans
 &trans   &kp ESC      &kp LA(LEFT)  &kp LA(UP)      &kp LA(RIGHT)  &kp ENTER    &none                 &kp LEFT      &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &kp PIPE
 &kp AT   &kp AT_SIGN  &kp HOME      &kp LEFT_SHIFT  &kp END        &kp DEL      &kp LG(LS(NUMBER_4))  &kp RU_COMMA  &kp RU_DOT      &kp PAGE_DOWN  &kp QUESTION     &kp COLON
-                                    &kp LGUI        &trans         &kp SPACE    &kp BACKSPACE         &mo 3         &kp RALT
+                                    &kp LGUI        &trans         &kp SPACE    &kp BACKSPACE         &mo 9         &kp RALT
             >;
+
+            label = "RU_LOWER";
         };
 
         raise_layer_ru {
@@ -227,8 +243,21 @@
 &none  &kp EXCL  &kp AT                &kp HASH        &kp DLLR                &kp PRCNT                  &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR      &none
 &none  &kp TAB   &kp LEFT_PARENTHESIS  &kp UNDERSCORE  &kp RIGHT_PARENTHESIS   &trans                     &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH      &none
 &none  &trans    &trans                &trans          &kp LA(LG(LEFT_ARROW))  &kp LA(LG(RIGHT_ARROW))    &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp KP_SLASH  &none
-                                       &kp LGUI        &mo 3                   &kp SPACE                  &kp RET    &trans     &kp RALT
+                                       &kp LGUI        &mo 9                   &kp SPACE                  &kp RET    &trans     &kp RALT
             >;
+
+            label = "RU_RAISE";
+        };
+
+        RU_CONF {
+            bindings = <
+&bootloader        &sys_reset        &kp F1  &kp F2   &kp F3   &kp F4     &bt BT_SEL 0  &bt BT_SEL 1  &trans             &bt BT_CLR  &bt BT_CLR_ALL  &none
+&none              &kp C_PLAY_PAUSE  &kp F5  &kp F6   &kp F7   &kp F8     &out OUT_BLE  &out OUT_USB  &ext_power EP_TOG  &trans      &studio_unlock  &none
+&kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp F9  &kp F10  &kp F11  &kp F11    &psd          &trans        &tog 4             &sys_reset  &bootloader     &none
+                                             &trans   &trans   &trans     &trans        &trans        &tog 5
+            >;
+
+            label = "RU_CONF";
         };
     };
 };
