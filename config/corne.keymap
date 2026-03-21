@@ -145,6 +145,8 @@
 &kp LCMD          &kp Z  &kp X  &td_copy   &td_paste  &kp B        &kp N    &kp M  &kp COMMA       &kp DOT  &kp QUESTION   &kp RIGHT_BRACE
                                 &kp LCTRL  &mo 1      &kp SPACE    &kp RET  &mo 2  &kp LEFT_SHIFT
             >;
+
+            label = "EN";
         };
 
         lower_layer_en {
@@ -160,6 +162,8 @@
 &kp AT   &kp AT_SIGN  &kp HOME      &kp LEFT_SHIFT  &kp END        &kp DEL      &kp LG(LS(NUMBER_4))  &kp COMMA  &kp LC(DOT)     &kp PAGE_DOWN  &kp QUESTION     &kp COLON
                                     &kp LGUI        &trans         &kp SPACE    &kp BACKSPACE         &mo 3      &kp RALT
             >;
+
+            label = "lower_layer_en";
         };
 
         raise_layer_en {
